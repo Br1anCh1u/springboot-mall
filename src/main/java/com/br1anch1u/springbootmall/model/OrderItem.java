@@ -7,6 +7,8 @@ public class OrderItem {
     private Integer productId;
     private Integer quantity;
     private Integer amount;
+    private String productName;
+    private String imageUrl;
 
     public OrderItem() {
     }
@@ -51,6 +53,22 @@ public class OrderItem {
         this.amount = amount;
     }
 
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     @Override
     public String toString() {
         return "OrderItem{" +
@@ -59,6 +77,8 @@ public class OrderItem {
                 ", productId=" + productId +
                 ", quantity=" + quantity +
                 ", amount=" + amount +
+                ", productName='" + productName + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
                 '}';
     }
 }
